@@ -1,0 +1,426 @@
+@media screen {(max-width: 1000;)
+
+  a{
+    padding:25px;
+  }
+h1{
+  font-family: sans-serif,'Roboto Mono', monospace;
+   font-size: 65px;
+   line-height: 1em;
+   text-decoration:underline;
+   text-align:center;
+   color:white;
+}
+h1::before{
+  content: attr(data-text);
+  position: absolute;
+  white-space:nowrap;
+  color:black;
+  text-decoration: underline;
+  border-right: 5px solid black;
+  overflow: hidden;
+  animation: animate 10s linear infinite;
+  filter: drop-shadow(0 0 100px black) drop-shadow(0 0 200px black);
+}
+@keyframes animate {0%,10%,100%{width: 0%;}
+ 70%,90%{width: 100%;} 
+}
+
+p{
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+  font-size:30px;
+  text-align: center;
+  
+}
+#box:hover{
+  font-size:30px;
+   padding:5px;
+}
+#city {
+  color: rgb(0, 0, 0);
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+}
+.form
+{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.weather {
+  background-image: url('https://media.licdn.com/dms/image/C5612AQGBXVToj48VBQ/article-cover_image-shrink_600_2000/0/1520139677753?e=2147483647&v=beta&t=Iz0ixQqWeGIOEf6Qzwl5z7kR5OAtT3wU_3PTff_54ik');
+  background-size: cover;
+  padding: 20px;
+  color: white;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+#weatherData {
+  margin-top: 20rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  font-weight: bold;
+  background-image: url("https://wallpaperaccess.com/full/5767261.jpg");
+  opacity: 70%;
+}
+
+.weather-card {
+  background-image: url("https://wallpaperaccess.com/full/5767261.jpg");
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.weather-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem
+}
+
+.weather-card p {
+  font-size: 1rem;
+  font-weight: bold;
+  font-weight: 500;
+}
+
+.logo img {
+  width: 400px;
+  height: auto;
+  margin-right: 1rem;
+}
+.weather-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-image: url("https://wallpaperaccess.com/full/5767261.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.logo h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+#box
+{
+  font-size: 25px;
+  background-color:antiquewhite;
+  border-radius: 5px;
+  border: none;
+  opacity:60%;
+  position: relative;
+  top:20px;
+  
+}
+#one{ 
+  display: inline-flex;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: x-large;
+  border: 7px solid rgb(48, 96, 49);
+  border-radius: 25px;
+  position:relative;
+  left: 5%;
+  top:30px;
+  padding: 9px;
+  background-color:rgba(87, 224, 231, 0.754);
+}
+#one{
+  animation-name:infiniteupdown;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-in-out;
+  transition: all 1s;
+}
+@keyframes infiniteupdown {
+  0%{
+      transform: translateY(0px);
+  }
+  50%{
+      transform: translateY(-80px);
+  }
+  100%{
+      transform: translateY(0px);
+  }
+}
+#two{
+  animation-name: infiniteupdown;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-in-out;
+  transition: all 1s;
+}
+@keyframes infiniteupdown {
+  0%{
+      transform: translateY(0px);
+  }
+  50%{
+      transform: translateY(-80px);
+  }
+  100%{
+      transform: translateY(0px);
+  }
+}
+#two{ 
+  display: inline-flex;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: x-large;
+  border: 7px solid rgb(214, 212, 207);
+  border-radius: 25px;
+  position:relative;
+  top:30px;
+  left:65%;
+  padding: 9px;
+  background-color:rgba(231, 159, 87, 0.837);
+}
+.submit
+{
+  font-size: 25px;
+  cursor: pointer;
+  border: none;
+  background-color: antiquewhite;
+  border: none;
+  border-radius: 4px;
+  position: relative;
+  top:20px;
+}
+.fit
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;}
+  .jj{
+    position: relative;
+    top:30px;
+    background-color:#B4B4B3;
+    padding: 7px;
+    position: relative;
+    top:20px;
+    text-align: center;
+  }
+  a{
+    padding: 80px;
+    font-size: large;
+  }
+ 
+}
+@media (max-width: 768px) {
+
+  h1{
+    font-family: sans-serif,'Roboto Mono', monospace;
+     font-size: 42px;
+     text-align: center;
+     line-height: 1em;
+     text-decoration:underline;
+     text-align:center;
+     color:white;
+  }
+  h1::before{
+    content: attr(data-text);
+    position: absolute;
+    white-space:nowrap;
+    color:black;
+    text-decoration: underline;
+    border-right: 5px solid black;
+    overflow: hidden;
+    animation: animate 10s linear infinite;
+    filter: drop-shadow(0 0 100px black) drop-shadow(0 0 200px black);
+  }
+  @keyframes animate {0%,10%,100%{width: 0%;}
+   70%,90%{width: 100%;} 
+  }
+  
+  p{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+    font-size:25px;
+    text-align: center;
+    
+  }
+  #box:hover{
+    font-size:25px;
+     padding:5px;
+  }
+  #city {
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+  }
+  .form
+  {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .weather {
+    background-image: url('https://media.licdn.com/dms/image/C5612AQGBXVToj48VBQ/article-cover_image-shrink_600_2000/0/1520139677753?e=2147483647&v=beta&t=Iz0ixQqWeGIOEf6Qzwl5z7kR5OAtT3wU_3PTff_54ik');
+    background-size: cover;
+    padding: 20px;
+    color: white;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  #weatherData {
+    margin-top: 20rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-weight: bold;
+    background-image: url("https://wallpaperaccess.com/full/5767261.jpg");
+    opacity: 70%;
+  }
+  
+  .weather-card {
+    background-image: url("https://wallpaperaccess.com/full/5767261.jpg");
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .weather-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem
+  }
+  
+  .weather-card p {
+    font-size: 1rem;
+    font-weight: bold;
+    font-weight: 500;
+  }
+  
+  .logo img {
+    width: 400px;
+    height: auto;
+    margin-right: 1rem;
+  }
+  .weather-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px;
+      background-image: url("https://wallpaperaccess.com/full/5767261.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  .logo h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  #box
+  {
+    font-size: 25px;
+    background-color:antiquewhite;
+    border-radius: 5px;
+    border: none;
+    opacity:60%;
+    position: relative;
+    top:20px;
+    
+  }
+  #one{ 
+    display: inline-flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    border: 7px solid rgb(48, 96, 49);
+    border-radius: 25px;
+    position:relative;
+    left: 5%;
+    top:250px;
+    padding: 9px;
+    background-color:rgba(87, 224, 231, 0.754);
+  }
+  #one{
+    animation-name:infiniteupdown;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    transition: all 1s;
+  }
+  @keyframes infiniteupdown {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-80px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+  }
+  #two{
+    animation-name: infiniteupdown;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    transition: all 1s;
+  }
+  @keyframes infiniteupdown {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-80px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+  }
+  #two{ 
+    display: inline-flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    border: 7px solid rgb(214, 212, 207);
+    border-radius: 25px;
+    position:relative;
+    top:400px;
+    left:20%;
+    padding: 9px;
+    background-color:rgba(231, 159, 87, 0.837);
+  }
+  .submit
+  {
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 4px;
+    position: relative;
+    top:25px;
+    left: 37%;
+  }
+  .fit
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  }

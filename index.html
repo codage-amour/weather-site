@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather">
+    <meta name="keywords" content="weather,city weather,country weather,place weather">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <title>GET YOUR DAY PLAN!</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,200&family=Roboto+Mono:ital,wght@0,200;0,500;1,700&display=swap"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="https://cdn.wallpapersafari.com/35/15/e35Vwz.jpg">
+  <img
+  class="fit"
+  src="https://cdn.wallpapersafari.com/35/15/e35Vwz.jpg"
+  />
+  <nav class="jj">
+      <a href="index.html">KnowYourWeather</a>
+      <a href="#">Services</a>
+      <a href="about.html" target="_blank">About</a>
+      <a href="#">Contact us</a>
+  </nav>
+<h1 data-text="Get Your Day Plan!">Get Your Day Plan!</h1>
+<p> Enter City's Name</p>
+<form class="form" id="weatherForm">
+  <input type="text" name="city" id="box" placeholder="Enter Here" required />
+  <button class="submit" type="button" id="searchButton">Search </button>
+</form>
+<span id="one">Ohh no!<br>Fully dressed..<br>but its raining</span>
+<span id="two">Oops!<br>Wore black..<br>Its too sunny</span>
+
+<div id="weatherData"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script class="data">
+      $(document).ready(function () {
+        $("#searchButton").click(function () {
+          var cityName = $("#box").val();
+          $.ajax({
+            type: "POST",
+            url: "search.php",
+            data: { city: cityName },
+            success: function (response) {
+              $("#weatherData").html(response);
+            },
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
